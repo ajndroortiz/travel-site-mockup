@@ -1,0 +1,32 @@
+{
+  "name": "travel-site-mockup",
+  "version": "1.0.0",
+  "description": "Travel Site Mockup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajndroortiz/travel-site-mockup.git"
+  },
+  "author": "Alejandro <ajndro.ortiz@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajndroortiz/travel-site-mockup/issues"
+  },
+  "homepage": "https://github.com/ajndroortiz/travel-site-mockup#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "jquery": "^3.1.0",
+    "normalize.css": "^4.2.0",
+    "postcss-cssnext": "^2.8.0",
+    "postcss-import": "^8.1.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-pxtorem": "^3.3.1",
+    "postcss-simple-vars": "^3.0.0"
+  }
+}
