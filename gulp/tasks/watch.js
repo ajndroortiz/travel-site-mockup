@@ -5,14 +5,14 @@ browserSync = require('browser-sync').create();
 gulp.task('watch', function() {
   browserSync.init({
     notify: false,
+    browser: 'google chrome',
     server: {
       baseDir: 'app'
     }
   });
 
-  gulp.watch('./app/index.html', function() {
-    browserSync.reload();
-  });
+  gulp.watch('./app/index.html').on('change', browserSync.reload);
+
   gulp.watch('./app/assets/styles/**/*.css', function() {
     gulp.start('cssInject');
   });
