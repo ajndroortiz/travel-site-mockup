@@ -23,7 +23,7 @@ gulp.task('watch', function() {
 
 gulp.task('cssInject', ['css'], function() {
   return gulp.src('./app/temp/css/style.css')
-  .pipe(browserSync.stream());
+    .pipe(browserSync.stream());
 });
 
 gulp.task('jsInject', ['jsscripts'], function() {
