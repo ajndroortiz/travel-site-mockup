@@ -1,5 +1,6 @@
 @import 'normalize.css';
 @import 'base/_colors';
+@import 'base/_mixins';
 @import 'base/_globals';
 @import 'modules/_site-header';
 @import 'modules/_large-hero';

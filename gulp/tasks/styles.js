@@ -3,11 +3,13 @@ var gulp           = require('gulp'),
   cssimport        = require('postcss-import'),
   cssnext          = require('postcss-cssnext'),
   cssvars          = require('postcss-simple-vars'),
+  mixins           = require ('postcss-mixins'),
   pxtorem          = require('postcss-pxtorem');
 
 gulp.task('css', function() {
   var plugins = [
     cssimport,
+    mixins,
     cssnext({
       browsers: ['last 2 versions']
     }),
