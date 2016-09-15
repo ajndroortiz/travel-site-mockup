@@ -4,6 +4,7 @@ $google: #dd4b39;
 $youtube: #b00;
 
 $white: #fff;
+$white-shallow: rgba(255, 255, 255, .8);
 $black: #000;
 $offBlack: #3e474f;
 $red: #f00;
