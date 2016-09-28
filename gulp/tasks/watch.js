@@ -1,11 +1,10 @@
 var gulp    = require('gulp'),
 browserSync = require('browser-sync').create();
 
-
 gulp.task('watch', function() {
   browserSync.init({
     notify: false,
-    browser: 'google chrome',
+    browser: 'safari technology preview',
     server: {
       baseDir: 'app'
     }
@@ -16,9 +15,11 @@ gulp.task('watch', function() {
   gulp.watch('./app/assets/styles/**/*.css', function() {
     gulp.start('cssInject');
   });
+
   gulp.watch('./app/assets/scripts/app.js', function() {
     gulp.start('jsInject');
   });
+
 });
 
 gulp.task('cssInject', ['css'], function() {
