@@ -10,12 +10,12 @@ var gulp           = require('gulp'),
 gulp.task('css', function() {
   var plugins = [
     cssimport,
+    cssvars,
     sassFunc,
     mixins,
     cssnext({
       browsers: ['last 2 versions']
     }),
-    cssvars,
     pxtorem({
       propWhiteList: [],
       mediaQuery: true

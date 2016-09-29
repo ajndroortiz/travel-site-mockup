@@ -1,6 +1,12 @@
-var gulp = require('gulp');
+var gulp = require('gulp'),
+webpack = require('webpack');
 
-gulp.task('jsscripts', function() {
-  return gulp.src('./app/assets/scripts/app.js')
-    .pipe(gulp.dest('./app/temp/js/'));
+gulp.task('jsscripts', function(callback) {
+  webpack(require('../../webpack.config.js'), function(err, stats) {
+    if (err) {
+      console.log(err.toString());
+    }
+    console.log(stats.toString());
+    callback();
+  });
 });

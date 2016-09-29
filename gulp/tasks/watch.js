@@ -4,7 +4,7 @@ browserSync = require('browser-sync').create();
 gulp.task('watch', function() {
   browserSync.init({
     notify: false,
-    browser: 'safari technology preview',
+    browser: 'google chrome',
     server: {
       baseDir: 'app'
     }
@@ -16,7 +16,7 @@ gulp.task('watch', function() {
     gulp.start('cssInject');
   });
 
-  gulp.watch('./app/assets/scripts/app.js', function() {
+  gulp.watch('./app/assets/scripts/**/*.js', function() {
     gulp.start('jsInject');
   });
 
@@ -28,6 +28,5 @@ gulp.task('cssInject', ['css'], function() {
 });
 
 gulp.task('jsInject', ['jsscripts'], function() {
-  return gulp.src('./app/temp/js/app.js')
-    .pipe(browserSync.stream());
+  browserSync.reload();
 });

@@ -1,1 +1,3 @@
-console.log('app.js is working');
+import MobileMenu from './modules/MobileMenu';
+
+var mobileMenu = new MobileMenu();
