@@ -39,6 +39,7 @@
     "webpack": "^1.13.2"
   },
   "dependencies": {
+    "jquery-smooth-scroll": "^2.0.0",
     "waypoints": "^4.0.1"
   }
 }

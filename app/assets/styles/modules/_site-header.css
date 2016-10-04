@@ -10,7 +10,12 @@
   }
 
   @mixin atMedium {
+    position: fixed;
     background-color: rgba($mainBlue, .3);
+
+    &--dark {
+      background-color: rgba(23, 51, 72, .85);
+    }
   }
 
   &__btn-container {
@@ -27,6 +32,7 @@
     left: 50%;
     transform: translateX(-50%) scale(.8);
     transform-origin: 50% 0;
+    transition: transform .3s ease-out;
 
     @mixin atMedium {
       left: auto;
@@ -110,11 +116,13 @@
     position: relative;
     z-index: -10;
 
+
     @mixin atMedium {
       opacity: 1;
       z-index: 1;
       padding-top: 0;
       transform: scale(1);
+      display: block;
     }
 
     &--is-visible {
@@ -122,9 +130,11 @@
       z-index: 1;
       transform: scale(1);
     }
+  }
+}
 
-    @mixin atMedium {
-      display: block;
-    }
+@mixin atMedium {
+  .site-header--dark .site-header__logo {
+    transform: scale(.57);
   }
 }
