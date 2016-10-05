@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "jquery-smooth-scroll": "^2.0.0",
+    "lazysizes": "^2.0.2",
     "waypoints": "^4.0.1"
   }
 }
