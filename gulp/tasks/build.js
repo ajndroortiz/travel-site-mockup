@@ -1,11 +1,11 @@
-var gulp = require('gulp'),
-del = require('del'),
-usemin = require('gulp-usemin'),
-rev = require('gulp-rev'),
-cssnano = require('gulp-cssnano'),
-uglify = require('gulp-uglify'),
-imagemin = require('gulp-imagemin')
-browserSync = require('browser-sync').create();
+var gulp       = require('gulp'),
+del            = require('del'),
+usemin         = require('gulp-usemin'),
+rev            = require('gulp-rev'),
+cssnano        = require('gulp-cssnano'),
+uglify         = require('gulp-uglify'),
+imagemin       = require('gulp-imagemin'),
+browserSync    = require('browser-sync').create();
 
 gulp.task('previewDist', function() {
   browserSync.init({
@@ -29,7 +29,7 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function() {
     '!./app/assets/scripts/**',
     '!./app/temp',
     '!./app/temp/**'
-  ]
+  ];
   return gulp.src(pathsToCopy)
     .pipe(gulp.dest('./docs'));
 });
