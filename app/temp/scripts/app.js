@@ -69,10 +69,11 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var mobileMenu = new _MobileMenu2.default();
+	var modal = new _Modal2.default();
+	var stickyHeader = new _StickyHeader2.default();
+
 	new _RevealOnScroll2.default((0, _jquery2.default)(".feature-item"), "85%");
 	new _RevealOnScroll2.default((0, _jquery2.default)(".testimonial"), "60%");
-	var stickyHeader = new _StickyHeader2.default();
-	var modal = new _Modal2.default();
 
 /***/ },
 /* 1 */
@@ -11210,7 +11211,7 @@
 	    this.headerTriggerElement = (0, _jquery2.default)('.large-hero__title');
 	    this.createHeaderWaypoint();
 	    this.pageSections = (0, _jquery2.default)('.page-section');
-	    this.headerLink = (0, _jquery2.default)(".primary-nav a");
+	    this.headerLink = (0, _jquery2.default)('.primary-nav a');
 	    this.createPageSectionWaypoints();
 	    this.addSmoothScrolling();
 	    this.refreshWaypoints();

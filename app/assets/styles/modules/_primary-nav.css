@@ -24,6 +24,7 @@
 
     @mixin atMedium {
       display: block;
+      padding-right: 20PX;
       float: left;
     }
   }
@@ -49,7 +50,7 @@
       font-size: 1rem;
       background-color: transparent;
 
-      .is-current-link {
+      &.is-current-link {
         color: #fabb69;
       }
     }

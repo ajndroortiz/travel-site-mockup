@@ -1,6 +1,5 @@
 import $ from 'jquery';
 
-
 class Modal {
   constructor() {
     this.openModalButton = $(".open-modal");
@@ -8,6 +7,7 @@ class Modal {
     this.closeModalButton = $(".modal__close");
     this.events();
   }
+
   events() {
     // clicking the open modal button
     this.openModalButton.click(this.openModal.bind(this));
@@ -22,10 +22,12 @@ class Modal {
       this.closeModal();
     }
   }
+
   openModal() {
     this.modal.addClass("modal--is-visible");
     return false;
   }
+
   closeModal() {
     this.modal.removeClass("modal--is-visible");
   }

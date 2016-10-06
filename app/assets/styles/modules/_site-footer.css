@@ -1,13 +1,13 @@
 .site-footer {
   background-color: $mainBlue;
   color: white;
-  font-weight: 200;
   padding: .5rem 0;
   text-align: center;
 
   &__text {
     display: block;
     margin-bottom: 1rem;
+    font-weight: 200;
 
     @mixin atMedium {
       display: inline;

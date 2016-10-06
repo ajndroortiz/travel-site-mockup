@@ -39,7 +39,7 @@
       transform: translateX(0);
 
       .site-header--dark & {
-        transform: scale(.57);
+        transform: scale(.56);
       }
     }
   }
@@ -101,7 +101,7 @@
       transform: rotate(45deg) scaleX(1.25);
     }
 
-    & .site-header__menu-icon__middle {
+    .site-header__menu-icon__middle {
       opacity: 0;
       transform: scaleX(0);
     }
@@ -126,7 +126,6 @@
       z-index: 1;
       padding-top: 0;
       transform: scale(1);
-      display: block;
     }
 
     &--is-visible {

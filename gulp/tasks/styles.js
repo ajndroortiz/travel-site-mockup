@@ -11,10 +11,10 @@ var gulp           = require('gulp'),
 gulp.task('css', function() {
   var plugins = [
     cssimport,
-    cssvars,
     mixins,
-    sassFunc,
+    cssvars,
     nested,
+    sassFunc,
     prefix,
     pxtorem({
       propWhiteList: [],
